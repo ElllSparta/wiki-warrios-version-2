@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wiki-Warriors</title>
+  <link rel="stylesheet" href="decoracion.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Wiki-Warriors</h1>
+    <div>
+      <img src="imagenes/wiki.png" width="290" height="350" alt="Logo de la wiki">
+    </div>
+    <p>En esta página se hablará de temas populares sin explicación.</p>
+  </header>
+
+  <aside style="float: right;">
+    <h3>Contenido destacado</h3>
+    <ul>
+      <li>Top 5 creepypastas</li>
+      <li>Mejores mods de Minecraft</li>
+      <li>Cómo ser mod de Discord</li>
+    </ul>
+  </aside>
+
+ <nav>
+  <ul>
+    <li><a class="boton" href="paranormal.html">Videos paranormales</a></li>
+    <li><a class="boton" href="base.html">Bideo geims</a></li>
+    <li><a class="boton" href="series.html">Series</a></li>
+    <li><a class="boton" href="peliculas.html">Películas</a></li>
+    <li><a class="boton" href="canciones.html">Canciones</a></li>
+    <li><a class="boton" href="creepypasta.html">Creepypastas</a></li>
+  </ul>
+</nav>
+
+
+  <main>
+    <section>
+      <article>
+        <h2>1. Osito gominola al revés</h2>
+        <p>
+          La primera es la del Osito gominola. Se dice que si ponemos la canción al revés,
+          se escucha "Malo niño yo sí soy". ¡Pero eso no es todo!
+          También se ha interpretado que se oye "Jesús no existe",
+          lo cual llevó a que se catalogara como satánica.
+        </p>
+        <img src="imagenes/gominola.jpg" width="200" height="200" alt="Osito gominola">
+      </article>
+
+      <article>
+        <h2>2. Free Fire es malo</h2>
+        <p>
+          "Free Fire es malo, no jueguen Free Fire" fue un video viral en YouTube,
+          protagonizado por una joven hondureña que advertía sobre el juego.
+          Con el tiempo, se volvió un meme muy popular en la comunidad gamer.
+        </p>
+        <img src="imagenes/fri-fayer.jpg" width="200" height="100" alt="Free Fire meme">
+      </article>
+    </section>
+  </main>
+<script>
+  
+  (function(){
+    const links = document.querySelectorAll('nav ul li a.boton');
+    const current = location.pathname.split('/').pop(); 
+    links.forEach(a => {
+      if (a.getAttribute('href') === current) {
+        a.classList.add('activa');
+      }
+    });
+  })();
+</script>
+
+  <footer>
+    <p>© 2025 Wiki-Warriors | Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
